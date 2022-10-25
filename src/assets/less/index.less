@@ -21,6 +21,7 @@
 body {
   background: @main_bg no-repeat fixed;
   background-size: cover;
+  .column(center, flex-start)
 }
 
 .container {
@@ -60,6 +61,7 @@ select {
 /* Header */
 
 .header {
+  max-width: 1920px;
   //todo: на ширине экрана - 1024px, min-height: 180;
   .row(space-between);
   min-height: 80px;
@@ -124,7 +126,6 @@ select {
 }
 
 .block {
-  .linearText();
   min-height: 330px;
   width: 310px;
   margin-bottom: 20px;
@@ -159,6 +160,7 @@ select {
 
   &__data {
     .fontOpt(@text_vsmall, 300);
+    background: @linear;
     .linearText();
   }
 }
