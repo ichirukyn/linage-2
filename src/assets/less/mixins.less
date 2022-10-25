@@ -11,8 +11,8 @@
 
 .column(@align, @justify) {
   display: flex;
-  align-items: @align;
   flex-direction: column;
+  align-items: @align;
   justify-content: @justify;
 }
 
@@ -25,12 +25,30 @@
 
 
 .btn {
-  background: @linear border-box;
+  background: none;
+  .fontOpt(@text_base, 500);
   padding: @pd_big @pd_base;
   border-radius: @radius_small;
   width: 160px;
-  //border: 2px solid #00b2ff29;
   text-align: center;
+  border: 2px solid #5b7cffd1;
+  color: #5b7cffd1;
+
+  &_fill {
+    border-color: #fff0;
+    color: @black;
+    background: @linear border-box;
+  }
+  &_small {
+    .fontOpt(@text_vsmall, 500)
+  }
+
+  &_big {
+    .fontOpt(@text_big, 500)
+  }
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .linearText {

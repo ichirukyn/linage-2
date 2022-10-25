@@ -23,7 +23,7 @@ const paths = {
 }
 
 task("components", () => {
-  return src(paths.src.folder + "*.html")
+  return src(paths.src.folder + "/**/*.html")
     .pipe(
       include({
         includePaths: __dirname + paths.src.components,
