@@ -1,0 +1,40 @@
+.image(@width, @height) {
+  height: @height;
+  max-width: @width;
+  object-fit: cover;
+}
+
+.fontOpt(@fs, @fw){
+  font-weight: @fw;
+  font-size: @fs;
+}
+
+.column(@align, @justify) {
+  display: flex;
+  align-items: @align;
+  flex-direction: column;
+  justify-content: @justify;
+}
+
+.row(@justify) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: @justify;
+}
+
+
+.btn {
+  background: @linear border-box;
+  padding: @pd_big @pd_base;
+  border-radius: @radius_small;
+  width: 160px;
+  //border: 2px solid #00b2ff29;
+  text-align: center;
+}
+
+.linearText {
+  //background: @linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,69 @@
+@@include('components/header.html')
+
+<div class="profile">
+    <div class="container">
+        <div class="header_1">Личный кабинет</div>
+        <div class="profile__bank">
+            <div class="profile__info">
+                <span class="header_2 blur">Login</span>
+                <span class="profile__coin blur">
+                    <span>
+                        <p>Кошелек баланс</p>
+                        <p>10</p>
+                    </span>
+                    <span>
+                        <p>Кошелек баланс</p>
+                        <p>10</p>
+                    </span>
+                    <span>
+                        <p>Кошелек баланс</p>
+                        <p>10</p>
+                    </span>
+                </span>
+            </div>
+            <form class="profile__transfer blur">
+                <p class="header_2">Перевод на персонажа</p>
+                <span>
+                    <p>Баланс персонажа:</p>
+                    <input type="text" placeholder="100$">
+                </span>
+                <span>
+                    <p>Ввод количества:</p>
+                    <input type="text" placeholder="100$">
+                </span>
+                <span>
+                    <select>
+                        <option disabled selected>Имя персонажа</option>
+                    </select>
+                    <input class="btn linearText" type="submit">
+                </span>
+            </form>
+            <form class="profile__transfer blur">
+                <p class="header_2">Перевод с персонажа</p>
+                <span>
+                    <p>Баланс персонажа:</p>
+                    <input type="text" placeholder="100$">
+                </span>
+                <span>
+                    <p>Ввод количества:</p>
+                    <input type="text" placeholder="100$">
+                </span>
+                <span>
+                    <select>
+                        <option disabled selected>Имя персонажа</option>
+                    </select>
+                    <input class="btn linearText" type="submit">
+                </span>
+            </form>
+        </div>
+        <div class="character blur">
+            <p class="header_2">Персонажи</p>
+            <div class="character__list">
+                @@include('components/characterBlock.html')
+                @@include('components/characterBlock.html')
+                @@include('components/characterBlock.html')
+                @@include('components/characterBlock.html')
+            </div>
+        </div>
+    </div>
+</div>
